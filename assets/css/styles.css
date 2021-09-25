@@ -1,0 +1,51 @@
+:root {
+    --primary-color: rgb(0, 179, 164);
+    --secondary-color: rgb(255, 241, 46);
+    --tertiary-color: rgb(67, 255, 29);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 4vw;
+    display: inline;
+    padding: 0 0 10px 40px;
+}
+
+header nav {
+    display: inline-flex;
+    width: 60%;
+    justify-content: flex-end;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0 50px 0 0;
+}
+
+header nav ul li a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-size: 1.55vw;
+    padding: 5px 10px;
+    border-bottom: 2px solid var(--tertiary-color);
+    margin: 10px;
+    
+}
+
