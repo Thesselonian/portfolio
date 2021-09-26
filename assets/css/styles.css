@@ -18,6 +18,7 @@ header {
     justify-content: space-between;
     background-color: var(--quaternary-color);
     flex-wrap: wrap;
+    height: 13vw;
 }
 
 header h1 {
@@ -25,9 +26,9 @@ header h1 {
     font-weight: bold;
     font-size: 4vw;
     display: inline;
-    padding: 10px;
+    padding: 5px;
     background-color: var(--primary-color);
-    margin: 0 0 20px 10px;
+    height: 6vw;
 }
 
 header nav {
@@ -81,31 +82,40 @@ header nav ul li a {
 
 main {
   background-color: var(--quaternary-color);
-  padding: 20px;
+  padding: 20px 0 0 0;
 }
 
-/* Styling for about me*/
+/* Styling for body stuff*/
 
 .body-sections {
   display: flex;
   flex-wrap: wrap;
   margin: 0 0 20px 0;
   justify-content: flex-start;
-  width: 100%;
+  width: 100vw;
 }
 
-.eric-image {
+.body-content {
   display: flex;
-  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
   border-left: 2px solid var(--primary-color);
-  width: 35vw;
-  height: 30vw;
+  padding-left: 30px;
+  height: 100%;
+  width: 80vw;
 }
 
 .body-asides {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.eric-image {
+  display: flex;
+  padding: 20px;
+  width: 35vw;
+  height: 28vw;
 }
 
 main section article {
@@ -141,8 +151,8 @@ main section aside h2 {
   display: flex;
   flex: 1 70%;
   margin: 0 10 10 10;
-  width: 540px;
-  height: 400px;
+  width: 70vw;
+  height: 65vw;
   background-image: url('../images/project-1.jpg');
   background-size: cover;
   align-items: flex-end;
@@ -225,11 +235,51 @@ footer aside h2 {
 }
 
 @media screen and (max-width: 768px) {
+  .eric-image {
+    width: 32vw;
+    height: 28vw;
+  }
 
+  .body-content {
+    width: 70vw;
+  }
+
+  main section article {
+    width: 70vw;
+    padding-left: 2vw;
+  }
+
+  header nav ul li a {
+    font-size: 3.5vw;
+  }
 }
 
 @media screen and (max-width: 575px) {
+  .eric-image {
+    width: 45vw;
+    height: 35vw;
+  }
 
+  main section article {
+    width: 60vw;
+  }
+
+  .body-content {
+    width: 60vw;
+  }
+
+  .project-1 {
+    width: 60vw;
+    height: 50vw;
+  }
+
+  header nav ul li a {
+    font-size: 3vw;
+  }
+
+  .footer-text{
+    font-size: 4vw;
+  }
 }
 
 
